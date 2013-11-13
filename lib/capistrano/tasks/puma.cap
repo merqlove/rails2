@@ -1,15 +1,15 @@
 namespace :puma do
 
-  desc 'Start puma'
-  task :start do
-    on roles (:app) do
-      within current_path do
-        execute "bin/puma.sh", "start -c config/puma/#{fetch(:stage)}.rb"
-      end
-    end
-  end
+#  desc 'Start puma'
+#  task :start do
+#    on roles (:app) do
+#      within current_path do
+#        execute "bin/puma.sh", "start -c config/puma/#{fetch(:stage)}.rb"
+#      end
+#    end
+#  end
 
-  %w[stop restart].each do |command|
+  %w[start stop restart status].each do |command|
     desc "#{command} puma"
     task command do
       on roles (:app) do

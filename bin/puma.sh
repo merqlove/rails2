@@ -12,8 +12,7 @@ PUMA_SOCKET=tmp/sockets/puma.sock
 
 # check if puma process is running
 puma_is_running() {
-  if [ -S $PUMA_SOCKET ] ; then
-    echo `cat $PUMA_PID_FILE | xargs pgrep -P`
+  if [ -S $PUMA_SOCKET ] ; then    
     if [ -e $PUMA_PID_FILE ] ; then
       if kill -0 `cat $PUMA_PID_FILE` ; then
         return 0
@@ -77,8 +76,19 @@ case "$1" in
     echo "Trying cold reboot"
     bin/puma.sh start --config $PUMA_CONFIG_FILE
     ;;
+    
+  status)
+    if puma_is_running ; then
+      echo "puma is running"
+      exit 0
+    else
+      echo "puma is not running"
+      exit 1 # return error
+    fi
+ 
+    ;;
 
   *)
-    echo "Usage: bin/puma.sh {start|stop|restart}" >&2
+    echo "Usage: bin/puma.sh {start|stop|restart|status}" >&2
     ;;
 esac
