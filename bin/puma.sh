@@ -15,7 +15,7 @@ puma_is_running() {
   if [ -S $PUMA_SOCKET ] ; then
     echo `cat $PUMA_PID_FILE | xargs pgrep -P`
     if [ -e $PUMA_PID_FILE ] ; then
-      if kill -0 cat $PUMA_PID_FILE ; then
+      if kill -0 `cat $PUMA_PID_FILE` ; then
         return 0
       else
         echo "No puma process found"
