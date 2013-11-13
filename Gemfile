@@ -42,6 +42,7 @@ gem 'puma', group: :production
 # Use Capistrano for deployment
 gem 'capistrano', '~> 3.0', require: false, group: :development
 gem 'capistrano-bundler', require: false, group: :development
-gem 'capistrano-puma', github: "seuros/capistrano-puma", require: false, group: :development
+gem 'capistrano-rails', require: false, group: :development
+# gem 'capistrano-puma', github: "seuros/capistrano-puma", require: false, group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]

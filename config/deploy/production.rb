@@ -1,7 +1,7 @@
-set :user, 'merkulov'
+# set :user, 'merkulov'
 set :sudo_user, 'deploy'
 
-set :deploy_to, '/srv/apps/#{fetch(:application)}'
+set :deploy_to, "/srv/apps/#{fetch(:application)}"
 set :rails_env, 'production'
 
 set :stage, :production
@@ -21,8 +21,7 @@ set :stage, :production
 # definition into the server list. The second argument
 # something that quacks like a has can be used to set
 # extended properties on the server.
-server 'localhost', roles: %w{web app db}, :primary => true
-set :port, 2222
+server '10.0.0.2', user: 'merkulov', roles: %w{web app db}
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)

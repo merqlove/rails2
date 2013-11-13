@@ -8,7 +8,7 @@
 PUMA_CONFIG_FILE=config/puma.rb
 PUMA_PID_FILE=tmp/pids/puma.pid
 PUMA_SOCKET=tmp/sockets/puma.sock
-PUMA_ENVIRONMENT=development
+# PUMA_ENVIRONMENT=development
 
 # check if puma process is running
 puma_is_running() {
@@ -30,7 +30,8 @@ puma_is_running() {
 }
 
 case "$2" in
-  -e|--environment) PUMA_ENVIRONMENT="$3" ;;
+  # -e|--environment) PUMA_ENVIRONMENT="$3" ;;
+  -c|--config) PUMA_CONFIG_FILE="$3" ;;
   --) ;;
   *) ;;
 esac
@@ -40,9 +41,9 @@ case "$1" in
     echo "Starting puma..."
     rm -f $PUMA_SOCKET
     if [ -e $PUMA_CONFIG_FILE ] ; then
-      bundle exec puma --config $PUMA_CONFIG_FILE --environment $PUMA_ENVIRONMENT
+      bundle exec puma --config $PUMA_CONFIG_FILE #--environment $PUMA_ENVIRONMENT
     else
-      bundle exec puma --daemon --bind unix://$PUMA_SOCKET --pidfile $PUMA_PID_FILE --environment $PUMA_ENVIRONMENT
+      bundle exec puma --daemon --bind unix://$PUMA_SOCKET --pidfile $PUMA_PID_FILE #--environment $PUMA_ENVIRONMENT
     fi
 
     echo "done"
@@ -73,7 +74,7 @@ case "$1" in
     fi
 
     echo "Trying cold reboot"
-    bin/puma.sh start
+    bin/puma.sh start --config $PUMA_CONFIG_FILE
     ;;
 
   *)

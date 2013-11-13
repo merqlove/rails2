@@ -19,10 +19,11 @@ require 'capistrano/deploy'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
+# require 'capistrano/console'
 # require 'capistrano/rails/assets'
 # require 'capistrano/rails/migrations'
-require 'capistrano/puma'
-require 'capistrano/puma/jungle' #if you have need the jungle tasks
+# require 'capistrano/puma'
+# require 'capistrano/puma/jungle' #if you have need the jungle tasks
 
 # load 'config/cap_tasks/base'
 # load 'config/cap_tasks/nginx'

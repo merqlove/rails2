@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/seuros/capistrano-puma.git
-  revision: 8b223888bbe308d32f1468f9b80a0eef457e8906
-  specs:
-    capistrano-puma (0.0.5)
-      capistrano (~> 3.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,6 +34,8 @@ GEM
       sshkit (>= 0.0.23)
     capistrano-bundler (1.0.0)
       capistrano (>= 3.0.0.pre)
+    capistrano-rails (1.0.0)
+      capistrano
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -135,7 +130,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 3.0)
   capistrano-bundler
-  capistrano-puma!
+  capistrano-rails
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
