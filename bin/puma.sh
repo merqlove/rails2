@@ -13,7 +13,7 @@ PUMA_SOCKET=tmp/sockets/puma.sock
 # check if puma process is running
 puma_is_running() {
   if [ -S $PUMA_SOCKET ] ; then
-    echo `cat $PUMA_PID_FILE`
+    echo `cat $PUMA_PID_FILE | xargs pgrep -P`
     if [ -e $PUMA_PID_FILE ] ; then
       if cat $PUMA_PID_FILE | xargs pgrep -P > /dev/null ; then
         return 0
