@@ -43,6 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    dalli (2.6.4)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -132,6 +133,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails
   coffee-rails (~> 4.0.0)
+  dalli
   jbuilder (~> 1.2)
   jquery-rails
   puma

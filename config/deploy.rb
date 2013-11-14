@@ -12,11 +12,8 @@ set :ssh_options, {
   auth_methods: %w(publickey)
 }
 
-set :user, 'merkulov'
-
 set :scm, :git
 set :repo_url, 'git@github.com:merqlove/rails2.git'
-set :branch, :master
 set :deploy_via, :remote_cache
 
 set :bundle_flags, '--deployment --quiet'
@@ -26,7 +23,7 @@ set :bundle_dir, -> { shared_path.join('vendor/bundle') }
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :format, :pretty
-set :log_level, :debug
+set :log_level, :info
 set :pty, false
 
 set :linked_files, %w{config/database.yml}
