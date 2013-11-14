@@ -7,6 +7,13 @@ stop on runlevel [06]
 #stop on runlevel [!2345]
 #start on virtual-filesystems
 
-post-start exec su -s /bin/sh -c "RAILS_ENV=<%= fetch(:rails_env) %> && APP_PATH=<%= current_path %> && SHARED_PATH=<%= shared_path %> && TEMP_PATH=$SHARED_PATH/tmp && RBENV_ROOT=<%= fetch(:default_environment)['RBENV_ROOT'] %> && PATH=<%= fetch(:default_environment)['PATH'] %> && cd <%= current_path %> && bin/puma.sh start -c config/puma/<%= fetch(:rails_env) %>.rb" merkulov
+post-start exec su -s /bin/sh -c "RAILS_ENV=<%= fetch(:rails_env) %> && \
+APP_PATH=<%= current_path %> && \
+SHARED_PATH=<%= shared_path %> && \
+TEMP_PATH=$SHARED_PATH/tmp && \
+RBENV_ROOT=<%= fetch(:default_environment)['RBENV_ROOT'] %> && \
+PATH=<%= fetch(:default_environment)['PATH'] %> && \
+cd <%= current_path %> && \
+bin/puma.sh start -c config/puma/<%= fetch(:rails_env) %>.rb" merkulov
 
 post-stop exec su -s /bin/sh -c "kill -QUIT $( cat <%= shared_path %>/tmp/pids/puma.pid )" merkulov
