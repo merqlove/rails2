@@ -2,7 +2,7 @@ namespace :nginx do
   desc "Setup nginx configuration for this application"
   task :setup do
     on roles(:web) do
-      template "nginx_unicorn.erb", "/tmp/nginx_conf"
+      template "nginx_puma.erb", "/tmp/nginx_conf"
       with_sudo_user do
         sudo "mv /tmp/nginx_conf /etc/nginx/sites-enabled/#{application}"
         sudo "rm -f /etc/nginx/sites-enabled/default"
@@ -11,7 +11,7 @@ namespace :nginx do
       restart
     end
   end
-  after "deploy:setup", "nginx:setup"
+  after "deploy:symlink:linked_files", "nginx:setup"
 
   %w[start stop restart].each do |command|
     desc "#{command} nginx"

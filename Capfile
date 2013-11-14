@@ -22,11 +22,9 @@ require 'capistrano/bundler'
 # require 'capistrano/console'
 # require 'capistrano/rails/assets'
 # require 'capistrano/rails/migrations'
-# require 'capistrano/puma'
-# require 'capistrano/puma/jungle' #if you have need the jungle tasks
 
-# load 'config/cap_tasks/base'
-# load 'config/cap_tasks/nginx'
+load 'config/cap_tasks/base.rb'
+load 'config/cap_tasks/nginx.rb'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
