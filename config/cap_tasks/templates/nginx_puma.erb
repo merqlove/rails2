@@ -4,6 +4,7 @@ upstream <%= fetch(:application) %>_<%= fetch(:rails_env) %>_puma {
 
 server {
   listen 80 default deferred;
+  server_name rails2.lvh.me
   root <%= current_path %>/public;
 
   if (-f $document_root/system/maintenance.html) {
