@@ -8,7 +8,6 @@ set :default_environment, {
 set :ssh_options, {
   port: 22, 
   # verbose: :info,
-  # keys: %w(/Users/mrcr/.ssh/id_rsa_digitalocean),
   forward_agent: false,
   auth_methods: %w(publickey)
 }
@@ -35,13 +34,7 @@ set :linked_dirs, %w{.bundle log tmp/pids tmp/cache tmp/sockets vendor/bundle pu
 
 set :keep_releases, 5
 
-
-task :whoami do
-  on roles(:all) do
-    execute :whoami
-  end
-end
-
+SSHKit.config.command_map[:rake] = "bundle exec rake"
 
 # before :bundle, 'custom:rbenv_version'
 # after "deploy:symlink:linked_files", "nginx:setup"

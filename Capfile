@@ -21,7 +21,7 @@ require 'capistrano/deploy'
 require 'capistrano/bundler'
 # require 'capistrano/console'
 # require 'capistrano/rails/assets'
-# require 'capistrano/rails/migrations'
+require 'capistrano/rails/migrations'
 
 load 'config/cap_tasks/base.rb'
 load 'config/cap_tasks/nginx.rb'
