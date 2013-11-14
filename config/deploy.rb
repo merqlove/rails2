@@ -8,7 +8,7 @@ set :default_environment, {
 set :ssh_options, {
   port: 22, 
   # verbose: :info,
-  keys: %w(/Users/mrcr/.ssh/id_rsa_digitalocean),
+  # keys: %w(/Users/mrcr/.ssh/id_rsa_digitalocean),
   forward_agent: false,
   auth_methods: %w(publickey)
 }
@@ -44,6 +44,7 @@ end
 
 
 # before :bundle, 'custom:rbenv_version'
-after 'deploy:updating', 'custom:file_system'
+# after "deploy:symlink:linked_files", "nginx:setup"
+# after 'deploy:updating', 'custom:file_system'
 after 'deploy:finishing', 'deploy:cleanup'
 after 'deploy:cleanup', 'puma:restart'

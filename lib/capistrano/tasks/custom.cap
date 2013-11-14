@@ -6,13 +6,6 @@ namespace :custom do
     end
   end
 
-  desc 'Create the .rbenv-version file'
-  task :rbenv_version do
-    on roles(:app) do
-      run "cd #{release_path} && rbenv local 1.9.3-p327"
-    end
-  end
-
   desc 'Install data'
   task :data do 
     on roles(:app) do

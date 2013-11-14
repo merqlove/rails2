@@ -1,26 +1,26 @@
 namespace :nginx do
   desc "Setup nginx configuration for this application"
   task :setup do
-    on roles(:web) do
+    on roles(:web) do |host|
       template "nginx_puma.erb", "/tmp/nginx_conf"
-      with_sudo_user do
-        sudo "mv /tmp/nginx_conf /etc/nginx/sites-enabled/#{application}"
-        sudo "rm -f /etc/nginx/sites-enabled/default"
-        sudo "rm -f /etc/nginx/sites-enabled/000-default"
+      on "#{fetch(:sudo_user)}@#{host}" do
+        sudo "mv /tmp/nginx_conf /etc/nginx/sites-available/#{fetch(:application)}"
+        sudo "/usr/sbin/nxensite #{fetch(:application)}"
+        sudo "rm -f /etc/nginx/conf.d/default"      
       end
-      restart
     end
   end
-  after "deploy:symlink:linked_files", "nginx:setup"
 
   %w[start stop restart].each do |command|
     desc "#{command} nginx"
     task command do
-      on roles(:web) do
-        with_sudo_user do
-          sudo "service nginx #{command}"
+      on roles(:web) do |host|
+        on "#{fetch(:sudo_user)}@#{host}" do
+          sudo "/sbin/service nginx #{command}"
         end
       end
     end
   end
+
+  after "nginx:setup", "nginx:restart"
 end
