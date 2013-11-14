@@ -7,15 +7,6 @@ stop on runlevel [06]
 #stop on runlevel [!2345]
 #start on virtual-filesystems
 
-script
-exec su -s /bin/sh merkulov
-export RAILS_ENV=<%= fetch(:rails_env) %>
-export APP_PATH=<%= current_path %>
-export SHARED_PATH=<%= shared_path %>
-export TEMP_PATH="$SHARED_PATH/tmp"
-RBENV_ROOT=<%= default_environment['RBENV_ROOT'] %>
-export PATH=<%= default_environment['PATH'] %>
-cd $APP_PATH && bin/puma.sh -c config/puma/production.rb
-end script
+post-start exec su -s /bin/sh -c "RAILS_ENV=<%= fetch(:rails_env) %> && APP_PATH=<%= current_path %> && SHARED_PATH=<%= shared_path %> && TEMP_PATH=$SHARED_PATH/tmp && RBENV_ROOT=<%= fetch(:default_environment)['RBENV_ROOT'] %> && PATH=<%= fetch(:default_environment)['PATH'] %> && cd <%= current_path %> && bin/puma.sh start -c config/puma/<%= fetch(:rails_env) %>.rb" merkulov
 
-post-stop exec su -s /bin/sh -c kill -QUIT `cat <%= shared_path %>/pids/unicorn.pid` merkulov
+post-stop exec su -s /bin/sh -c "kill -QUIT $( cat <%= shared_path %>/tmp/pids/puma.pid )" merkulov

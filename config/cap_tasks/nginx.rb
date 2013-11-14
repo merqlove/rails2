@@ -4,9 +4,11 @@ namespace :nginx do
     on roles(:web) do |host|
       template "nginx_puma.erb", "/tmp/nginx_conf"
       template "service.erb", "/tmp/service_conf"
-      on "#{fetch(:sudo_user)}@#{host}" do
-        sudo "mv /tmp/nginx_conf /etc/nginx/sites-available/#{fetch(:application)}_#{fetch(:rails_env)}"
+      on "#{fetch(:sudo_user)}@#{host}" do        
+        sudo "mv /tmp/nginx_conf /etc/nginx/sites-available/#{fetch(:application)}_#{fetch(:rails_env)}"        
+        sudo "chown root:root /etc/nginx/sites-available/#{fetch(:application)}_#{fetch(:rails_env)}"
         sudo "mv /tmp/service_conf /etc/init/#{fetch(:application)}_#{fetch(:rails_env)}.conf"
+        sudo "chown root:root /etc/init/#{fetch(:application)}_#{fetch(:rails_env)}.conf"
       end
     end
   end
@@ -14,7 +16,7 @@ namespace :nginx do
   task :disable do
     on roles(:web) do |host|
       on "#{fetch(:sudo_user)}@#{host}" do
-        sudo "/usr/sbin/nxdissite #{fetch(:application)}_#{fetch(:rails_env)}"
+        sudo "/usr/sbin/nxdissite #{fetch(:application)}_#{fetch(:rails_env)} > /dev/null &"
       end
     end
   end 
@@ -38,6 +40,7 @@ namespace :nginx do
     end
   end
 
+  before "nginx:setup", "nginx:disable"
   after "nginx:setup", "nginx:enable"
   after "nginx:enable", "nginx:reload"
 end
