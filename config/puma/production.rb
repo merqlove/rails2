@@ -44,7 +44,7 @@ pidfile 'tmp/pids/puma.pid'
 # Use “path” as the file to store the server info state. This is
 # used by “pumactl” to query and control the server.
 #
-# state_path '/u/apps/lolcat/tmp/pids/puma.state'
+state_path 'tmp/pids/puma.state'
 
 # Redirect STDOUT and STDERR to files specified. The 3rd parameter
 # (“append”) specifies whether the output is appended, the default is
@@ -102,7 +102,7 @@ bind 'unix://tmp/sockets/puma.sock'
 #
 # The default is “0”.
 #
-# workers 2
+workers 4
 
 # Code to run when a worker boots to setup the process before booting
 # the app.

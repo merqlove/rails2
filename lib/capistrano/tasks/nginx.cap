@@ -3,12 +3,9 @@ namespace :nginx do
   task :setup do
     on roles(:web) do |host|
       template "nginx_puma.erb", "/tmp/nginx_conf"
-      template "service.erb", "/tmp/service_conf"
       on "#{fetch(:sudo_user)}@#{host}" do        
         sudo "mv /tmp/nginx_conf /etc/nginx/sites-available/#{fetch(:application)}_#{fetch(:rails_env)}"        
         sudo "chown root:root /etc/nginx/sites-available/#{fetch(:application)}_#{fetch(:rails_env)}"
-        sudo "mv /tmp/service_conf /etc/init/#{fetch(:application)}_#{fetch(:rails_env)}.conf"
-        sudo "chown root:root /etc/init/#{fetch(:application)}_#{fetch(:rails_env)}.conf"
       end
     end
   end

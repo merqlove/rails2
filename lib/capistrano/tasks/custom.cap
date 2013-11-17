@@ -1,11 +1,4 @@
 namespace :custom do
-  desc 'Shared storage folders and symlinks to the release'
-  task :file_system do
-    on roles(:app) do
-      #run "ln -nfs #{shared_path}/database.yml #{release_path}/config"
-    end
-  end
-
   desc 'Install data'
   task :data do 
     on roles(:app) do

@@ -23,8 +23,7 @@ require 'capistrano/bundler'
 # require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
-load 'config/cap_tasks/base.rb'
-load 'config/cap_tasks/nginx.rb'
+load 'lib/capistrano/base.rb'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }

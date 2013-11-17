@@ -1,0 +1,524 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fi",
+				"file_path"
+			],
+			[
+				"rec",
+				"remote_directory	remote_directory"
+			],
+			[
+				"defa",
+				"default_secret"
+			],
+			[
+				"vc",
+				"vcs_secrets"
+			],
+			[
+				"inc",
+				"include_recipe	include_recipe"
+			],
+			[
+				"in",
+				"include_recipe	include_recipe"
+			],
+			[
+				"file",
+				"filef	file full"
+			],
+			[
+				"pac",
+				"package_name"
+			],
+			[
+				"pa",
+				"package	package"
+			],
+			[
+				"rub",
+				"rubygems"
+			],
+			[
+				"dir",
+				"directoryf	directory full"
+			],
+			[
+				"dire",
+				"directoryr	directory recursive"
+			],
+			[
+				"che",
+				"chef_gem"
+			],
+			[
+				"kn",
+				"knife_encrypt_update"
+			],
+			[
+				"templ",
+				"templatev	template variables"
+			],
+			[
+				"sp",
+				"servicep	service pattern"
+			],
+			[
+				"t",
+				"tc	class .. < Test::Unit::TestCase .. end"
+			],
+			[
+				"ruby",
+				"ruby_block	ruby_block"
+			],
+			[
+				"rol",
+				"role_path"
+			],
+			[
+				"coo",
+				"cookbook_path"
+			],
+			[
+				"Si",
+				"SilexMtHaml"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"p",
+				"pagename"
+			],
+			[
+				"regis",
+				"register_widget"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"js",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"plist",
+				"Plist Json Converter: PLIST to JSON"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mrcr/.bashrc",
+		"/Users/mrcr/.ansible_hosts",
+		"/Users/mrcr/Repo/merqlove/merqlove.sublime-workspace",
+		"/Users/mrcr/.ssh/known_hosts",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/ssh_known_hosts/providers/entry.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/ssh_known_hosts/metadata.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/metadata.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/ssh_known_hosts/resources/entry.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cmd.sh",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/templates/default/ssh_config.erb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/data_bags/users/deploy.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/data_bags/users/merkulov.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/attributes/default.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/vcs_keys.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/iptables.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/imagemagick.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/templates/default/authorized_keys.erb",
+		"/Users/mrcr/.chef-repo/files/keys/id_rsa_digitalocean_deploy.pub",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/templates/default/port_nginx",
+		"/Users/mrcr/.gitconfig",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/templates/default/port_rails",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/Berksfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/attributes/secret_keys.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/Vagrantfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/attributes/users.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/attributes/default.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/roles/base_ruby.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/recipes/default.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/recipes/vcs_keys.rb",
+		"/Users/mrcr/.chef/knife.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/roles/base.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/.chef-config/knife.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/roles/vagrant.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/nodes/mrcr_vm.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/attributes/rbenv.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/rbenv.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/vcs_deploy.rb",
+		"/Users/mrcr/.chef-repo/data_bags/_tokens/bitbucket.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/recipes/default.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/attributes/users.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/attributes/vcs.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/deploy_key/libraries/deploy_key.rb",
+		"/Users/mrcr/.chef-repo/data_bags/_tokens/github.json",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/attributes/vcs.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/Berksfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/deploy_key/metadata.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/metadata.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/site-cookbooks/rails/.gitignore",
+		"/Users/mrcr/.bash_profile",
+		"/Users/mrcr/.chef-repo/data_bags/tokens/github.json",
+		"/Users/mrcr/.ssh/config",
+		"/private/etc/hosts",
+		"/Users/mrcr/Repo/merqlove/Vagrantfile",
+		"/Users/mrcr/Repo/nsa/.envrc",
+		"/Users/mrcr/Repo/mrcr/.envrc",
+		"/Users/mrcr/.envrc",
+		"/Users/mrcr/Repo/merqlove/.envrc",
+		"/Users/mrcr/Repo/merqlove/chef-repo/base_ruby.json",
+		"/Users/mrcr/Repo/Vagrantfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/.chef/knife.rb",
+		"/Users/mrcr/chef-repo/.chef/knife.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/.bekshelf/config.json",
+		"/Users/mrcr/Projects/2013/driverite/vitaly.txt",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/.gitignore",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/.kitchen.yml",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/chef-rails/metadata.rb",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/README.md",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/Rakefile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/mrcr_rails/Gemfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/rails/Vagrantfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/chef-rails/Vagrantfile",
+		"/Users/mrcr/Repo/merqlove/chef-repo/cookbooks/mrcr_rails/metadata.rb",
+		"/Users/mrcr/Projects/2013/driverite/alexey_arendarenko.txt",
+		"/Users/mrcr/Projects/2013/aysistor/chat.txt",
+		"/Users/mrcr/.berkshelf/config.json",
+		"/Users/mrcr/Downloads/chef-repo/.chef/knife.rb",
+		"/Users/mrcr/Projects/2013/driverite/nataliya_gudym.txt",
+		"/Users/mrcr/Repo/christ-leather.ru/config/shedule.rb",
+		"/Users/mrcr/Downloads/foundation-icons/foundation-icons.css",
+		"/Users/mrcr/Repo/cnsarails/app/repositories/ahp_repository.rb",
+		"/Users/mrcr/Repo/cnsarails/app/repositories/analytic_repository.rb",
+		"/Users/mrcr/Repo/cnsarails/app/controllers/application_controller.rb",
+		"/Volumes/Storage/Software/Design/OmniGraffle Professional 6/Serial.txt",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/EBF472F1-0426-4937-A773-675A0E64CEBC/pass_db_goldschmitt.sql",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/91B08722-2B3F-49E0-A17E-B1D8AFE01C63/functions.php",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/B4D8F11A-E721-4673-909D-4C077243EB26/error_log",
+		"/Users/mrcr/Projects/2013/bt/script.js",
+		"/Users/mrcr/Projects/2013/bt/ajax-dynamic-list.js",
+		"/Users/mrcr/Projects/2013/bt/ajax.js",
+		"/Users/mrcr/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mrcr/.rbenv/default-gems",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/CC5F9868-03E7-43DF-8F84-EB2A7067BA6E/backup.log",
+		"/Users/mrcr/Downloads/init.sh",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/4ACCFC70-A9B6-4E23-87CD-B3DC09466908/logrotate",
+		"/Users/mrcr/Downloads/3.yaml.zip",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/CA688879-C032-4C09-8BD4-51A8ACB49726/unicorn.stderr.log",
+		"/Users/mrcr/Downloads/import.csv",
+		"/Users/mrcr/Repo/cnsarails/app/views/factors/import.haml",
+		"/Users/mrcr/Library/Caches/Cleanup At Startup/Transmit/F212FB2F-1CC8-46DB-A2CD-309061BB63F4/aysistor.xsl",
+		"/Users/mrcr/Repo/cnsarails/config/initializers/errbit.rb",
+		"/Users/mrcr/Downloads/jquery.pwi/js/jquery.pwi.js",
+		"/Users/mrcr/Sites/cskamobile2/pe/PregMatchExtension.php",
+		"/Users/mrcr/Sites/cskamobile/web/assets/css/main.min.css",
+		"/Users/mrcr/Sites/cskamobile/Gruntfile.js",
+		"/Users/mrcr/Sites/cskamobile/resources/views/list.haml",
+		"/Users/mrcr/Sites/cskamobile/resources/log/app.log",
+		"/Users/mrcr/Sites/cskamobile/web/test.php",
+		"/Users/mrcr/Sites/cskamobile/composer.json",
+		"/Users/mrcr/Sites/cskamobile/src/app.php",
+		"/Users/mrcr/Sites/cskamobile/resources/locales/ru.yml",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/other/helper.js",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/script.js",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/bootstrap.js",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/vendor/zepto.fix.js",
+		"/Users/mrcr/Sites/cskamobile/src/SKE/Composer/Script.php",
+		"/Users/mrcr/Sites/cskamobile/resources/views/menu-mobile.haml",
+		"/Users/mrcr/Sites/cskamobile/resources/views/menu-ipad.haml",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/less/bootstrap/bootstrap.less",
+		"/Users/mrcr/Sites/cskamobile/resources/views/single.haml",
+		"/Users/mrcr/Sites/cskamobile/resources/views/page.haml",
+		"/Users/mrcr/Sites/cskamobile/.gitignore",
+		"/Users/mrcr/Sites/cskamobile/README.md",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/less/app.less",
+		"/Users/mrcr/Sites/cskamobile/.jshintrc",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/bootstrap/bootstrap.js",
+		"/Users/mrcr/Sites/cskamobile/web/assets/js/vendor/jquery-1.10.2.min.js",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/vendor/zepto.js",
+		"/Users/mrcr/Sites/cskamobile/resources/assets/js/helper.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/mrcr/Desktop/ar",
+			"/Applications/XAMPP/xamppfiles/htdocs/cskanews/wp-content/themes/cskanews/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vagrant",
+			"программна",
+			"програмн",
+			"'",
+			" =>",
+			"Installing\\s([a-z\\-_0-9]+).*\\n",
+			"Installing\\s([a-z\\-_]+).*\\n",
+			"Installing\\s([a-z\\-]+).*\\n",
+			"registration_errors",
+			"register_post",
+			"<label class=\"term\">",
+			"Выберите интересующие Вас разделы",
+			"register",
+			"tap",
+			"Modern",
+			"thumb-image",
+			"мщеу",
+			"roots_sidebar_path",
+			"media_",
+			"text",
+			"bg",
+			"gradi",
+			"555555",
+			"text-sh",
+			"assets",
+			"<?php bloginfo('template_directory'); ?>",
+			"-ms",
+			"filter:",
+			"filter",
+			"'before_widget' => '',",
+			"'after_title' => '</div><div class=\"widget\"><div class=\"widgetpad\">',",
+			"'before_title' => '<div class=\"widgetmaintitle\">',",
+			"'after_widget' => '</div></div>',",
+			"register_widget('WPSNvideo');",
+			"html",
+			"xs",
+			"html",
+			"xt",
+			"html",
+			"(.*)\\n",
+			"(.*)",
+			"(.*)\\n",
+			".*\\n",
+			"lm."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			":",
+			"$1 ",
+			"'before_widget' => '<section class=\"widget %1$s %2$s\"><div class=\"widget-inner\">',",
+			"'after_title' => '</h3>',",
+			"'before_title' => '<h3>',",
+			"'after_widget'  => '</div></section>',",
+			"361;\"$1\";\\n",
+			"361;$1;\\n",
+			"361;Volkswagen;",
+			"\"25\";\"$1\";\"126\";\"1\";\"1\";\"23\";\"$1\";\"\";\"\";\"\";\"\";\"/images/cms/data/brand_idnds/auto-logo-1.png\";\"/images/cms/data/brands/big/auto-logo-08.png\";\"$1\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\"\\n",
+			"\"25\";\"$1\";\"126\";\"1\";\"1\";\"23\";\"$1\";\"\";\"\";\"\";\"\";\"/images/cms/data/brand_idnds/auto-logo-2.png\";\"/images/cms/data/brands/big/auto-logo-08.png\";\"$1\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\"\\n",
+			"\"25\";\"$1\";\"126\";\"1\";\"1\";\"23\";\"$1\";\"\";\"\";\"\";\"\";\"/images/cms/data/brand_idnds/auto-logo-2.png\";\"/images/cms/data/brands/big/auto-logo-08.png\";\"$1\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\"",
+			"\"92\";\"$1\";\"82\";\"1\";\"1\";\"11\";\"$1\";\"\";\"\";\"\"\\n",
+			"\"92\";\"$1\";\"82\";\"1\";\"1\";\"11\";\"{1}\";\"\";\"\";\"\"\\n",
+			"\"92\";\"{1}\";\"82\";\"1\";\"1\";\"11\";\"{1}\";\"\";\"\";\"\"\\n",
+			"\"92\";\"\\\\1\";\"82\";\"1\";\"1\";\"11\";\"\\\\1\";\"\";\"\";\"\"\\n",
+			"\"92\";\"$1\";\"82\";\"1\";\"1\";\"11\";\"$1\";\"\";\"\";\"\"\\n",
+			"\"92\";\"$1\";\"82\";\"1\";\"1\";\"11\";\"$1\";\"\";\"\";\"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/application_controller.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.vagrant":
+	{
+		"height": 0.0
+	},
+	"project": "ct.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

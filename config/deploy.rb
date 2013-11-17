@@ -36,5 +36,6 @@ SSHKit.config.command_map[:rake] = "bundle exec rake"
 # before :bundle, 'custom:rbenv_version'
 # after "deploy:symlink:linked_files", "nginx:setup"
 # after 'deploy:updating', 'custom:file_system'
+before "nginx:setup", "puma:service"
 after 'deploy:finishing', 'deploy:cleanup'
 after 'deploy:cleanup', 'puma:restart'
